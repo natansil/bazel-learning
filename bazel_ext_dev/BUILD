@@ -11,7 +11,8 @@
 # # my_rule(name = 'whatever')
 # my_rule(name = "foo", suffix = "txt")
 
-
+load("//:my-extensions/new_file_output.bzl", "new_file_rule")
+new_file_rule(name = 'new')
 
 
 load("//:my-extensions/fun-with-outputs.bzl", "my_rule")
@@ -37,8 +38,8 @@ vdu(
     one_result = "foo2"
 )
 
-load('//:my-extensions/thousand-outputs.bzl', 'thousand')
-thousand(name = "natan")
+# load('//:my-extensions/thousand-outputs.bzl', 'thousand')
+# thousand(name = "natan")
 
 
 # java_library(
