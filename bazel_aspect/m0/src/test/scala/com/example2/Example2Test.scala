@@ -1,4 +1,4 @@
-package com.example
+package com.example2
 
 import org.specs2.mutable.SpecificationWithJUnit
 

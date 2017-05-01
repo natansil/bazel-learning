@@ -1,2 +1,2 @@
-load('//:extensions/aspect.bzl', 'as')
-as(name = "whatever")
+# load('//:extensions/aspect.bzl', 'example_aspect')
+# example_aspect(name = "whatever")
