@@ -15,7 +15,7 @@ public class GreetingMojo extends AbstractMojo {
 
 
         String checkoutDir = System.getProperty("user.dir");
-        String repoDir = checkoutDir + "/../../../.m2/repository/com/wix/maven-fake-module/1.0.0-SNAPSHOT/fake-maven-module-1.0.1-SNAPSHOT.jar";
+        String repoDir = checkoutDir + "/../../../.m2/repository/com/wix/maven-fake-module/1.0.1-SNAPSHOT/fake-maven-module-1.0.1-SNAPSHOT.jar";
         String projDir = checkoutDir + "/maven-fake-module/target/fake-maven-module-1.0.1-SNAPSHOT.jar";
         String command = "cp " + projDir +  " " + repoDir;
 
@@ -35,6 +35,6 @@ public class GreetingMojo extends AbstractMojo {
         }
         getLog().info("Finished Copying.");
 
-        getLog().info("Installing /home/builduser/agent14/work/204184abec719f44/maven-fake-module/1.0.0-SNAPSHOT/maven-fake-module-1.0.0-SNAPSHOT.jar to /home/builduser/.m2/repository/com/wix/maven-fake-module/1.0.0-SNAPSHOT/maven-fake-module-1.0.0-SNAPSHOT.jar");
+        getLog().info("Installing /home/builduser/agent14/work/204184abec719f44/maven-fake-module/1.0.1-SNAPSHOT/maven-fake-module-1.0.1-SNAPSHOT.jar to /home/builduser/.m2/repository/com/wix/maven-fake-module/1.0.1-SNAPSHOT/maven-fake-module-1.0.1-SNAPSHOT.jar");
     }
 }
