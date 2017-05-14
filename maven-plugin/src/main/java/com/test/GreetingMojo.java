@@ -13,8 +13,8 @@ public class GreetingMojo extends AbstractMojo {
 
 
         String checkoutDir = System.getProperty("user.dir");
-        String repoDir = checkoutDir + "/../../../.m2/repository/com/wix/maven-fake-module/1.0.0-SNAPSHOT"
-        String projDir = checkoutDir + "/maven-fake-module/target"
+        String repoDir = checkoutDir + "/../../../.m2/repository/com/wix/maven-fake-module/1.0.0-SNAPSHOT";
+        String projDir = checkoutDir + "/maven-fake-module/target";
 
         getLog().info("Working Directory = " + checkoutDir);
         getLog().info("Repo Directory = " + repoDir);
