@@ -7,3 +7,10 @@ scala_library(
         "Example.scala",
         ]
 )
+
+scala_library(
+    name="scala_example3",
+    srcs=[
+        "Example3.scala",
+        ]
+)

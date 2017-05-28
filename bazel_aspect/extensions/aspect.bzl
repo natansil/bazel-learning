@@ -4,7 +4,7 @@ def _example_aspect_impl(target, ctx):
     # outputs = [ctx.new_file(f.basename + ".FOO")
     #            for f in target.files]
 
-    print("ctx.rule: ", ctx.rule.attr.srcs[0].files)
+    print("target ", target.label, "ctx.rule: ", ctx.rule.attr.testonly)
 
     output = ctx.new_file("foo.bar")
     outputs = [output]
