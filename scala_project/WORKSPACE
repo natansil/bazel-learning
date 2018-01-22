@@ -1,4 +1,4 @@
-rules_scala_version="2191e5eb9a11c69e5d273977254e7cc99a692ba7"
+rules_scala_version="7d02925073f0c78f905d9ca51d0470ee2508c8f3"
 
 http_archive(
              name = "io_bazel_rules_scala",
