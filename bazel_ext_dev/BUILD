@@ -42,21 +42,25 @@ vdu(
 # thousand(name = "natan")
 
 
-# java_library(
-#     name = "example",
-#     srcs = ["src/main/java/com/example/Example.java"],
-# )
+java_library(
+   name = "example",
+   srcs = ["src/main/java/com/example/Example.java"],
+   deps = [
+              "@com_google_guava_guava//jar",
+   ]
+)
 
 
 
-# java_test(
-#     name = "example_tests",
-#     size = "small",
-#     srcs = ["src/test/java/com/example/ExampleTest.java"],
-#     deps = [
-#         ":example",
-#         "//third_party:junit4",
-#     ],
-#     test_class = "com.example.ExampleTest",
-# )
+java_test(
+   name = "example_tests",
+   size = "small",
+   srcs = ["src/test/java/com/example/ExampleTest.java"],
+   deps = [
+       ":example",
+       "//third_party:junit4",
+
+   ],
+   test_class = "com.example.ExampleTest",
+)
 

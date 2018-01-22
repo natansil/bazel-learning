@@ -1,0 +1,9 @@
+steps:
+# bazel build all targets
+- name: gcr.io/cloud-builders/bazel
+  args: ['--bazelrc=.bazelrc.remote', 'build', '--build_event_text_file=scala_project_BEP.txt', '//...']
+  volumes:
+  - name: 'ssh'
+    path: /root/.ssh
+
+timeout: 120m

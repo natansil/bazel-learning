@@ -5,8 +5,11 @@ scala_library(
     srcs=[
         "UsageExample.scala",
         ],
-    deps = ["//m0/src/main/scala/com/example:scala_example",
-    "//m0/src/main/scala/com/example2:scala_example2"],
+    deps = [
+    # "//m0/src/main/scala/com/example:scala_example",
+    # "//m0/src/main/scala/com/example2:scala_example2",
+    # "//third_party/com/google/guava:guava"
+    ],
     # testonly = 1
 
 )

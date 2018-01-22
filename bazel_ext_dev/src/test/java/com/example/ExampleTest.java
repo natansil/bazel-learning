@@ -11,7 +11,7 @@ public class ExampleTest {
 
         int result = example.add(1, 1);
 
-        assertEquals(2, result);
+        assertEquals(3, result);
 
     }
 }
