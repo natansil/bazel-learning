@@ -1,16 +1,14 @@
-load("@io_bazel_rules_scala//scala:scala.bzl", "scala_library", "scala_specs2_junit_test")
+load("@io_bazel_rules_scala//scala:scala.bzl", "scala_library", "scala_test")
 
 scala_library(
-    name="scala_example",
+    name="example",
     srcs=[
         "src/main/scala/com/example/Example.scala",
         ]
 )
 
-scala_specs2_junit_test(
-    name = "scala_example_test",
-    size = "small",
+scala_test(
+    name = "example_test",
     srcs = ["src/test/scala/com/example/ExampleTest.scala"],
-    deps = [":scala_example"],
-    suffixes = ["Test"],
+    deps = [":example"],
 )

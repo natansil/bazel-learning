@@ -1,13 +1,10 @@
 package com.example
 
-import org.specs2.mutable.SpecificationWithJUnit
+import org.scalatest._
 
-class ExampleTest extends SpecificationWithJUnit {
-
-	"Example" should {
-		"return 2 -> 1+1" in {
-			val example = new Example3()
-			example.add(1,1) mustEqual 2
-		}
-	}
+class ExampleTest extends FlatSpec {
+  "Example" should "give correct answer" in {
+	val example = new Example()
+    assert(example.add(1,1).equals(2))
+  }
 }
